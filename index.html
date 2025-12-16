@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My 2048</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>My 2048</h1>
+<p>Click a tile → Use Arrow keys / Swipe</p>
+
+<div class="controls">
+  <div>
+    Score: <span id="score">0</span> |
+    Best: <span id="best">0</span>
+  </div>
+  <button id="restart">Restart</button>
+  <button id="darkToggle">🌙 Dark</button>
+</div>
+
+<div class="message" id="message"></div>
+
+<div class="grid" id="grid"></div>
+
+<!-- 🔊 Sounds -->
+<audio id="moveSound" src="https://assets.mixkit.co/sfx/preview/mixkit-click-melodic-tone-1129.mp3"></audio>
+<audio id="mergeSound" src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-jump-coin-216.mp3"></audio>
+<audio id="winSound" src="https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
